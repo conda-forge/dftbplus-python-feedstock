@@ -1,5 +1,5 @@
 {% set name = "dftbplus" %}
-{% set version = "21.1" %}
+{% set version = "21.2" %}
 
 package:
   name: {{ name|lower }}-python
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/{{ name }}/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 31d5a488843a05d8589a375307a2832c1fc938f9f7d830c45a062726659e7b0a
+  sha256: e73aa698ff951b59f7fe2ea027b292bae16abf545c9fdbb11b5b5127f04a3c10
 
 build:
   number: 0
