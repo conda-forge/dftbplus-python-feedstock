@@ -6,10 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/aradi/dftbplus/archive/refs/heads/release-22.1.zip
-  sha256: e737eefbf31463fd8a38679d70ac9399a7f141ac8ecf84229e40803eeb1bd222
-  #url: https://github.com/{{ name }}/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  #sha256: 31d5a488843a05d8589a375307a2832c1fc938f9f7d830c45a062726659e7b0a
+  url: https://github.com/{{ name }}/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
+  sha256: f0fc9a076aa2d7be03c31a3a845d8151fc0cc0b1d421e11c37044f78a42abb33
 
 build:
   number: 0
