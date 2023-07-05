@@ -1,13 +1,15 @@
 {% set name = "dftbplus" %}
-{% set version = "22.2" %}
+{% set version = "23.1" %}
 
 package:
   name: {{ name|lower }}-python
   version: {{ version }}
 
 source:
-  url: https://github.com/{{ name }}/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  sha256: ca69a5e21bf9071179c5a2c57d89cdcbb0543e771661ac5e8be584fafa4c61df
+  # url: https://github.com/{{ name }}/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
+  # sha256: ca69a5e21bf9071179c5a2c57d89cdcbb0543e771661ac5e8be584fafa4c61df
+  url: https://github.com/aradi/dftbplus/archive/cd0104f3824fec29c67e43e883479e740b4e2498.zip
+  sha256: a074e07a66df248ac762f7396ef6b09b2d9165556b0777aca551121f3338a7f7
 
 build:
   number: 0
@@ -16,10 +18,10 @@ build:
 
 requirements:
   host:
-    - python >=3.3
+    - python >=3.6
     - pip
   run:
-    - python >=3.3
+    - python >=3.6
     - numpy
     - dftbplus
 
