@@ -10,20 +10,23 @@ source:
   sha256: 776d83779666e06bf2930c3b1665cdb8e7409b8003e33e0178fbae8b47f5e0b1
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install tools/pythonapi -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy
     - dftbplus
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - dftbplus
 
