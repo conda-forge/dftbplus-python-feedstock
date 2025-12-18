@@ -7,9 +7,8 @@ package:
   version: {{ version }}
 
 source:
-#  url: https://github.com/{{ name }}/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
-  url: https://github.com/aradi/dftbplus/archive/refs/heads/release-25.1.zip
-  sha256: 7a21fa018ec26b154bd3e0da410cd657584feaec5960fa7b1d0f74a08a1583bd
+  url: https://github.com/dftbplus/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
+  sha256: 136088ffc8a3b27adca0cee46272966de62f2c42de91b632597fb12bf13c8d38
 
 build:
   number: {{ build }}
